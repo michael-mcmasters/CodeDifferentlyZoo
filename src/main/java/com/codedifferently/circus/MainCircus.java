@@ -2,6 +2,8 @@ package com.codedifferently.circus;
 
 import com.codedifferently.circus.animals.AbstractAnimal;
 import com.codedifferently.circus.animals.Bear;
+import com.codedifferently.circus.animals.Turtle;
+import com.codedifferently.circus.animals.Zebra;
 import org.apache.log4j.Logger;
 
 
@@ -17,7 +19,15 @@ public class MainCircus {
     }
 
     public void startTheShow(){
-        logger.warn("You need to program the show");
+        logger.info("You need to program the show");
+        Bear bearReference = new Bear("Smokey Da Bear");
+        bearReference.doTrick();
+
+        Turtle bowser = new Turtle("bowser");
+        bowser.doTrick();
+
+        Zebra zebra = new Zebra("Peter", 400);
+        zebra.doTrick();
     }
 
     public static void main(String[] args) {
